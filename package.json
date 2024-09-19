@@ -1,21 +1,26 @@
 {
   "name": "apitodolists",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
+  "type": "module",
   "scripts": {
+    "dev": "node --watch main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ezequiel",
   "license": "ISC",
-  "description": "",
+  "description": "Una simple API CRUD con validacion de usuario y test",
   "dependencies": {
     "express": "4.21.0",
     "mysql2": "3.11.3",
     "zod": "3.23.8"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "standard": "^17.1.2"
+    "jest": "29.7.0",
+    "standard": "17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }
