@@ -1,0 +1,32 @@
+GET http://localhost:3002
+###
+
+GET http://localhost:3002/auth
+###
+
+POST http://localhost:3002/auth/register
+Content-Type: application/json
+
+{
+    "username": "Ezequiel",
+    "password": "1234" 
+}
+###
+POST http://localhost:3002/auth/login
+Content-Type: application/json
+
+{
+    "username": "Ezequiel",
+    "password": "1234" 
+}
+###
+PUT http://localhost:3002/auth/8b860398-fc7e-46b7-b5ba-2c13418e6b2e
+Content-Type: application/json
+
+{
+    "username": "Marcelo",
+    "password": "1234"
+}
+###
+
+DELETE http://localhost:3002/auth/8b860398-fc7e-46b7-b5ba-2c13418e6b2e

@@ -1,0 +1,4 @@
+html[data-theme= 'dark'] {
+    --color-text: #fbfbfb;
+    --backgruond-color: black;
+}

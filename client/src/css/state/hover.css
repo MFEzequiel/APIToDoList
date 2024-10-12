@@ -1,0 +1,9 @@
+.li__link:hover {
+    color: var(--Dark-Blue);
+    border-bottom: 2px solid var(--Lime-Green);
+}
+
+.header__request:hover {
+    background-image: linear-gradient(to right, var(--Grayish-Blue), var(--Lime-Green),var(--Bright-Cyan));
+    outline: 2px solid var(--Bright-Cyan);
+}

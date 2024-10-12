@@ -1,0 +1,17 @@
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+button:disabled {
+    display: none;
+}

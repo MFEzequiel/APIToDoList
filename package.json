@@ -1,26 +1,20 @@
 {
-  "name": "apitodolists",
+  "name": "aplication-web",
   "version": "1.0.0",
   "main": "main.js",
-  "type": "module",
   "scripts": {
-    "dev": "node --watch main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run start-client\" \"npm run start-server-notes\" \"npm run start-server-images\" \"npm run start-server-auth\"",
+    "start-client": "cd client && npm run dev",
+    "start-server-notes":"cd server/server-notes && npm run dev",
+    "start-server-images":"cd server/server-image && npm run dev",
+    "start-server-auth":"cd server/server-auth && npm run dev"
   },
-  "keywords": [],
+  "keywords": ["API", "Arquitectura Microservicios", "Arquitectura Multiservicio"],
   "author": "Ezequiel",
   "license": "ISC",
-  "description": "Una simple API CRUD con validacion de usuario y test",
-  "dependencies": {
-    "express": "4.21.0",
-    "mysql2": "3.11.3",
-    "zod": "3.23.8"
-  },
+  "description": "Esta es una implementación de la arquitectura microservicios a una aplicación web de to do lists",
   "devDependencies": {
-    "jest": "29.7.0",
-    "standard": "17.1.2"
-  },
-  "eslintConfig": {
-    "extends": "standard"
+    "concurrently": "7.0.0"
   }
 }

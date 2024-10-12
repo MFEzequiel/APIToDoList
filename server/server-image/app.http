@@ -1,4 +1,4 @@
-GET http://localhost:3000/
+GET http://localhost:3000
 ###
 
 GET http://localhost:3000/notes
@@ -15,13 +15,13 @@ Content-Type: application/json
     "complete": true 
 }
 ###
-PUT http://localhost:3000/notes/1
+PUT http://localhost:3000/notes/8b860398-fc7e-46b7-b5ba-2c13418e6b2e
 Content-Type: application/json
 
 {
-    "content": "Ezequiel",
-    "complete": true
+    "content": "Marcelo",
+    "completed": true
 }
 ###
 
-DELETE http://localhost:3000/notes/1
+DELETE http://localhost:3000/notes/8b860398-fc7e-46b7-b5ba-2c13418e6b2e

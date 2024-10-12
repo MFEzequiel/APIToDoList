@@ -1,0 +1,28 @@
+GET http://localhost:3000
+###
+
+GET http://localhost:3000/notes
+###
+
+GET  http://localhost:3000/notes/1
+###
+
+POST http://localhost:3000/notes
+Authorization: Bearer { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBiNmNhZjA1LTRmYTMtNGVmNi1hOTkzLWZjNGY5MzlhYjhhYSIsInVzZXJuYW1lIjoiRXplcXVpZWwiLCJpYXQiOjE3Mjc4MzMzOTAsImV4cCI6MTcyNzgzNjk5MH0.3J4kY58kZ3AGApTbEIxDRhERjlDgL4-KmI-PEVZW3fY" }
+Content-Type: application/json
+
+{
+    "content": "Aprender microservisios",
+    "complete": true 
+}
+###
+PUT http://localhost:3000/notes/8b860398-fc7e-46b7-b5ba-2c13418e6b2e
+Content-Type: application/json
+
+{
+    "content": "Marcelo",
+    "completed": true
+}
+###
+
+DELETE http://localhost:3000/notes/8b860398-fc7e-46b7-b5ba-2c13418e6b2e
